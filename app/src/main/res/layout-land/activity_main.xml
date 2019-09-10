@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/raceanimal"
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="45dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/checkboxDog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <CheckBox
+        android:layout_alignLeft="@+id/checkboxDog"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/checkboxDog"
+        android:id="@+id/checkboxMickey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:layout_alignLeft="@+id/checkboxDog"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/checkboxMickey"
+        android:id="@+id/checkboxTiger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <SeekBar
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@drawable/ic_dog"
+        android:layout_alignBottom="@+id/checkboxDog"
+        android:layout_toRightOf="@+id/checkboxDog"
+        android:id="@+id/seekbarDog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <SeekBar
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@drawable/ic_mouse"
+        android:layout_alignBottom="@+id/checkboxMickey"
+        android:layout_toRightOf="@+id/checkboxMickey"
+        android:id="@+id/seekbarMickey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <SeekBar
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@drawable/ic_tiger"
+        android:layout_alignBottom="@+id/checkboxTiger"
+        android:layout_toRightOf="@+id/checkboxTiger"
+        android:id="@+id/seekbarTiger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_marginRight="50sp"
+        android:background="@null"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/flagrace"
+        android:layout_width="120dp"
+        android:layout_height="120dp" />
+
+    <TextView
+        android:id="@+id/textviewDiemso"
+        android:layout_margin="10dp"
+        android:textColor="#f20"
+        android:textSize="50sp"
+        android:text="100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:id="@+id/buttonPlay"
+        android:layout_centerInParent="true"
+        android:background="@null"
+        android:src="@drawable/button"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+
+</RelativeLayout>
